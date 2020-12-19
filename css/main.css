@@ -462,7 +462,7 @@ aside {
    .mission-content {
      display: flex;
      justify-content: space-between;
-     align-items: 
+     align-items: center;
    }
 
    .mission-content p {

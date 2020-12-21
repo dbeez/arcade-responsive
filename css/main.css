@@ -463,23 +463,38 @@ aside {
      display: flex;
      justify-content: space-between;
      align-items: center;
+     flex-flow: row wrap;
+     margin: 0 auto;
    }
 
    .mission-content p {
-     width: ;
+     width: 45%;
    }
 
    .contact-section .content-wrapper h2 {
-     width: 
-   }
+     width: 100%;
+    }
 
    .contact-content {
-    display: 
-    justify-content:;
-    align-items: 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
    }
 
    /****************FAQ Page******************/
+
+   .faq .content-wrapper {
+    justify-content: space-between;
+   }
+
+   .faq-content {
+    flex-basis: 40%;
+   }
+
+   .faq h2 {
+    width: 100%;
+   }
 }
 
 @media only screen and (min-width: 1200px) {

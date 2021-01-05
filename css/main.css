@@ -189,6 +189,14 @@ header {
   padding: 15px 0;
 }
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 footer {
   flex-direction: column;
 }
@@ -227,9 +235,17 @@ footer .copyright {
 /*** hero area ***/
 
 .hero-area {
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
+  background-size: cover;
+}
+
+.hero-area h1 {
+  display: flex;
+  justify-content: flex-start;
 }
 
 /* aside */
@@ -247,6 +263,13 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.features .content-wrapper {
+  background-image: url(../img/rawpixel-800820-unsplash1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .features h2 {

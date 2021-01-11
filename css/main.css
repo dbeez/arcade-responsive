@@ -172,8 +172,8 @@ footer {
 }
 
 header nav ul {
-  width: 100%;
   display: flex;
+  width: 100%;
   justify-content: space-around;
 }
 
@@ -273,6 +273,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: green;
 }
 
 /* features */
@@ -283,11 +284,14 @@ aside {
   flex-flow: row wrap;
 }
 
-.features .content-wrapper {
+.features {
   background-image: url(../img/rawpixel-800820-unsplash1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 .features h2 {

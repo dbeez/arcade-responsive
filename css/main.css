@@ -143,6 +143,16 @@ address {
 
 }
 
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 20px;
+}
+
+.social i {
+  font-size: 3.75em;
+  padding: 20px;
+}
+
    /* -------Base Header - Footer styles------------*/
 header,
 footer {

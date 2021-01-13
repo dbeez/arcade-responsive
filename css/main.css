@@ -97,34 +97,40 @@ html {
 body {
        font-family: 'Open Sans', sans-serif;
        font-size: 1em;
-       line-height: 1.6;
-       background-color: #222;
-       color: lightgray;
+       text-align: left;
+       color: #e2e3ed;
 }
 
 ul,
 ol {
      list-style-type: none;
+     margin: 0;
+     padding: 0;
 }  
 
 a {
      text-decoration: none;
-     color: lightgray;
+     color: #e2e3ed;
 }
 
 h2 {
      font-family: 'Poppins', sans-serif;
      font-size: 1.5em;
+     font-weight: 500;
+     margin: 0;
 } 
 
 h3,
 h4 {
      font-family: 'Poppins', sans-serif;
      font-size: 1.2em;
+     font-weight: 500;
+     margin: 20px 0;
 }
 
 p {
-
+     font-size: .875em;
+     line-height: 1.285;
 }
 
 img {
@@ -140,21 +146,18 @@ address {
 }
 
 .content-wrapper {
-
+  width: 90%;
+  margin: 50px 0;
 }
 
 .features i {
   font-size: 3.75em;
-  margin-bottom: 20px;
 }
 
 .social i {
   font-size: 3.75em;
   padding: 20px;
-  color: green;
-  border-radius:
-  width: 
-  height:
+  color: #ffffff;
 }
 
 .social h4 {
@@ -168,7 +171,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  color: lightgray;
+  background-color: #202322;
 }
 
 header nav ul {
@@ -208,15 +211,31 @@ header {
 }
 
 header figure {
-  width: 60%;
+  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
+/* Footer */
+
 footer {
+  text-align: center;
   flex-direction: column;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer p {
+  margin: 0;
 }
 
 footer .social-icons {
@@ -226,22 +245,17 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-footer .content-wrapper {
-  width: 60%;
-  margin: 50px 0;
-}
-
-footer p {
-  margin: 0;
-}
-
-footer .contact {
-  margin-bottom: 50px;
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -261,9 +275,16 @@ footer .copyright {
   background-size: cover;
 }
 
+.hero-area .content-wrapper {
+  margin: 50px 0;
+}
+
 .hero-area h1 {
   display: flex;
   justify-content: flex-start;
+  font-size: 48px;
+  margin: 0;
+  line-height: 45px;
 }
 
 /* aside */
@@ -273,7 +294,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: green;
+  background-color: #63785a;
 }
 
 /* features */
@@ -294,8 +315,12 @@ aside {
   flex-flow: row wrap;
 }
 
+.features article {
+  padding: 20px 0;
+}
 .features h2 {
   margin-bottom: 60px;
+  font-size: 36px;
 }
 
 .features .features-item {
@@ -305,14 +330,12 @@ aside {
   flex-flow: row wrap;
 }
 
-.features article {
-  width: 55%;
-  margin: 30px 0;
-}
-
 .features p {
   margin: 0;
   padding: 7px 0;
+  font-size: 11px;
+  line-height: 14px;
+  text-align: center;
 }
 
 /** reviews **/
@@ -321,6 +344,7 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #3d423a;
 }
 
 .reviews h2 {
@@ -351,6 +375,7 @@ aside {
 }
 
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -358,6 +383,7 @@ aside {
 }
 
 .contact-section {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -375,6 +401,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -545,6 +572,11 @@ input[type=button] {
     display: none;
    }
 
+   footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+   }
+
    /*Hero Area*/
 
    /*Aside*/
@@ -579,10 +611,23 @@ input[type=button] {
    /*Reviews*/
 
    .reviews article {
-    width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
    }
+
+  .reviews article figure,
+  .reviews article div {
+    width: 49%;
+  }
+
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
 
    /*Footer*/
    
